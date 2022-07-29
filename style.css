@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+
+
+body{
+
+  background:linear-gradient(to right bottom, #25389860,#5737d64d ),url("./assets/pexels-maxyne-barcel-10402282 1.png") ;
+ background-size: cover;
+ background-position: top;
+
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-item{
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #DDD101;
+}
+
+.navbar div img{
+
+  position: relative;
+  top: 30px;
+  left: 150px;
+}
+
+.button-small{
+  height: 50px;
+  width: 130px;
+  color: #FFFFFF;
+  background-color: #ff505f;
+  position: relative;
+  right: 100px;
+  border: none;
+  font-size: 20px;
+}
+
+
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+
+
+.hero{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start  ;
+  align-items: center;
+}
+
+
+.hero-heading{
+  font-family: "Oswald",sans-serif;
+  color: #DDD101;
+  font-size: 7em;
+  margin-left: 500px;
+  margin-right: 400px;
+
+}
+
+.button-large{
+  margin-top: 50px;
+  height: 80px;
+  width: 300px;
+  background-color: #ff505f;
+  border: none;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.bottom{
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
