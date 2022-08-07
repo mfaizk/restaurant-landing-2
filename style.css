@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,112 +6,247 @@
   font-family: "Red Rose", cursive;
 }
 
-
-body{
-
-  background:linear-gradient(to right bottom, #25389860,#5737d64d ),url("./assets/pexels-maxyne-barcel-10402282 1.png") ;
- background-size: cover;
- background-position: top;
-
+body {
+  background: linear-gradient(to right bottom, #25389860, #5737d64d),
+    url("./assets/pexels-maxyne-barcel-10402282 1.png");
+  background-size: cover;
+  background-position: top;
 }
 
 /* ------------------------------ */
 /* ---------- NAVBAR ------------ */
 /* ------------------------------ */
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 20vh;
+  height: 100px;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  /* background-color: magenta; */
+}
+.list-container {
+  width: 400px;
 }
 
-.list{
+.list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+  /* background-color: darkmagenta;  */
 }
 
-.list-item{
-  margin-left: 30px;
-  margin-right: 30px;
-  color: #DDD101;
+.list-item {
+  color: #ddd101;
+}
+.nav-logo-container {
+  /* background-color: blue; */
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar div img{
-
+/* .navbar div img {
   position: relative;
   top: 30px;
   left: 150px;
-}
+} */
 
-.button-small{
+.nav-button-container {
+  height: 100px;
+  /* background-color: orange; */
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-small {
   height: 50px;
   width: 130px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #ff505f;
-  position: relative;
-  right: 100px;
   border: none;
-  font-size: 20px;
 }
 
-
+.hamburger-menu {
+  display: none;
+}
 
 /* ------------------------------ */
 /* ---------- NAVBAR ------------ */
 /* ------------------------------ */
-
-
-
-
-
-
-
 
 /* ------------------------------ */
 /* ---------- HERO ------------ */
 /* ------------------------------ */
 
-
-
-.hero{
-  height: 80vh;
+.hero {
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: start  ;
+  justify-content: start;
   align-items: center;
+  /* background-color: magenta; */
 }
 
-
-.hero-heading{
-  font-family: "Oswald",sans-serif;
-  color: #DDD101;
-  font-size: 7em;
+.hero-heading {
+  font-family: "Oswald", sans-serif;
+  color: #ddd101;
+  font-size: 5.8vw;
   margin-left: 500px;
-  margin-right: 400px;
-
+  margin-right: 500px;
+  /* background-color: blue; */
+  text-align: center;
 }
 
-.button-large{
-  margin-top: 50px;
+.button-large {
   height: 80px;
   width: 300px;
   background-color: #ff505f;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 25px;
+  margin-top: auto;
 }
-.bottom{
+.bottom {
   position: fixed;
   bottom: 50px;
   right: 20px;
+  /* background-color: orange; */
 }
-
 
 /* ------------------------------ */
 /* ---------- HERO ------------ */
 /* ------------------------------ */
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background-color: magenta; */
+  }
+  .hero-heading {
+    font-family: "Oswald", sans-serif;
+    color: #ddd101;
+    font-size: 4em;
+    margin-left: 300px;
+    margin-right: 300px;
+    /* background-color: blue; */
+    text-align: center;
+    margin-top: 100px;
+  }
+  [alt="bottom-logo"] {
+    width: 100px;
+    height: 100px;
+  }
+  .button-large {
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    height: 50vh;
+  }
+  .list-container {
+    /* display: none; */
+    /* background-color: blue; */
+  }
+  .nav-button-container {
+    /* display: none; */
+  }
+  .hamburger-menu {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ham-burger-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 50px;
+    width: 130px;
+  }
+  .hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background-color: magenta; */
+  }
+  .hero-heading {
+    font-family: "Oswald", sans-serif;
+    color: #ddd101;
+    font-size: 3em;
+    margin-left: 300px;
+    margin-right: 300px;
+    /* background-color: blue; */
+    text-align: center;
+    margin-top: 100px;
+  }
+  [alt="bottom-logo"] {
+    width: 50px;
+    height: 50px;
+  }
+  .button-large {
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    height: 30vh;
+  }
+  .list {
+    width: 300px;
+    overflow: scroll;
+    /* background-color: orange; */
+  }
+  .list-container {
+    width: 300px;
+
+    /* display: none; */
+    overflow: scroll;
+    /* background-color: orange; */
+  }
+  .nav-button-container {
+    /* display: none; */
+  }
+  .hamburger-menu {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ham-burger-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
